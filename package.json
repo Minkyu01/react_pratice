@@ -1,4 +1,5 @@
 {
+  "homepage": "https://minkyu01.github.io/react_pratice/",
   "name": "react_todo",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://minkyu01.github.io/react_pratice/",
   "eslintConfig": {
     "extends": [
       "react-app",
