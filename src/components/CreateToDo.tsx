@@ -1,6 +1,19 @@
 import { useForm } from "react-hook-form";
 import { useRecoilValue, useSetRecoilState } from "recoil";
+import styled from "styled-components";
 import { categoryState, toDoState } from "../atoms";
+
+const Search = styled.input`
+  border-radius: 30px;
+  width: 470px;
+  height: 40px;
+  &:hover {
+    background-color: beige;
+  }
+  &::placeholder {
+    padding: 10px;
+  }
+`;
 
 interface IForm {
   toDo: string;
@@ -19,13 +32,12 @@ function CreateToDo() {
   };
   return (
     <form onSubmit={handleSubmit(handleValid)}>
-      <input
+      <Search
         {...register("toDo", {
           required: "Please write a To Do ",
         })}
-        placeholder="Write a to do"
-      ></input>
-      <button>Add</button>
+        placeholder="현재 리스트에 할 일을 추가하세요."
+      ></Search>
     </form>
   );
 }

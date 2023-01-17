@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,7 +53,8 @@ table {
 }
 
 body {
-  font-family: 'Nanum Myeongjo', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
   background-color : ${(props) => props.theme.bgColor};
   color : ${(props) => props.theme.textColor};
 };
